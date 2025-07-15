@@ -10,9 +10,20 @@ const cors = require("cors");
 
 const app = express();
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://learning-mgnt-sys.onrender.com",
+];
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
