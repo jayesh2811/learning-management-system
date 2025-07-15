@@ -1,9 +1,9 @@
 // src/pages/Dashboard.jsx
 import React from "react";
 import { useAppContext } from "../context/AppContext";
-import AdminDashboard from "../components/Dashboard/AdminDashboard";
-import InstructorDashboard from "../components/Dashboard/InstructorDashboard";
-import StudentDashboard from "../components/Dashboard/StudentDashboard";
+import AdminDashboard from "../components/dashboard/AdminDashboard";
+import InstructorDashboard from "../components/dashboard/InstructorDashboard";
+import StudentDashboard from "../components/dashboard/StudentDashboard";
 
 const Dashboard = () => {
   const { user } = useAppContext();
