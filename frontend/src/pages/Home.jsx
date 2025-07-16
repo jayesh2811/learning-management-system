@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import Courses from "../components/Courses";
+import Features from "../components/Features";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <div className="bg-gray-50 text-black">
       <Navbar />
       <Hero />
-      <Courses />
+      <Features />
       <Footer />
     </div>
   );
