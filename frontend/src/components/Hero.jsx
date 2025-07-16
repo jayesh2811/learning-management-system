@@ -1,8 +1,11 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaPlay, FaUsers, FaGraduationCap, FaTrophy } from "react-icons/fa";
 import heroImg from "../assets/hero.avif";
 
 const Hero = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-to-r from-purple-500 to-indigo-600 text-white text-center">
+    <section className="relative overflow-hidden bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-700">
       <div className="max-w-5xl mx-auto">
         <img
           src={heroImg}
